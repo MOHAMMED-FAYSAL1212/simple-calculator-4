@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+    
+}
+
+ 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+}
+form{
+    width: 250px;
+    background-color: rgba(221, 221, 221, 0.788);
+    padding: 30px 15px 15px 15px;
+    -webkit-box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .6);
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    
+}
+
+hr{
+    margin: 15px 0;
+    background-color: silver;
+}
+input[type="text"]{
+    font-family: 'Orbitron', sans-serif;
+    width: 100%;
+    font-size: 36px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    text-align: right;
+    background-color: rgb(241, 241, 241);
+    
+}
+
+.operator{
+    background-color: rgba(10, 41, 10, 0.925) !important;
+}
+
+.clear{
+    background-color: rgb(105, 5, 5) !important;
+}
+
+.ope{
+    background-color: rgb(1, 1, 46) !important;
+}
+
+.offbtn{
+    outline: none;
+    border: none;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 15px !important;
+    border-radius: 10%;
+    position: relative;
+   
+    bottom: 5px;
+    background-color: red !important;
+    box-shadow:  2px 2px 8px rgb(136, 129, 129),
+                inset -2px -2px 6px black;
+}
+
+
+.onbtn{
+    outline: none;
+    border: none;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 15px !important;
+    border-radius: 10%;
+    position: relative;
+    left: 163px;
+    bottom: 5px;
+    background-color: red !important;
+    box-shadow:  2px 2px 8px rgb(136, 129, 129),
+                inset -2px -2px 6px black;
+}
+
+.offbtn:active{
+    font-size: 13px !important;
+}
+
+.onbtn:active{
+    box-shadow:  inset 2px 2px 8px rgb(0, 0, 0),
+                inset -2px -2px 6px rgb(0, 0, 0);
+}
+
+.offbtn:active{
+    box-shadow:  inset 2px 2px 8px rgb(0, 0, 0),
+                inset -2px -2px 6px rgb(0, 0, 0);
+                color: rgb(241, 241, 241);
+}
+
+
+input[type = "button"]{
+    width: 58px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    margin-bottom: 4px;
+    margin-left: 1px;
+    font-size: 24px;
+    cursor: pointer;
+    
+   
+}
+input[type = "button"]:hover{
+ color: rgb(37, 255, 255);
+}
+
+

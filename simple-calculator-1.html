@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+   <!-- jQuery Libary -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="simple-calculator-1.css">
+</head>
+<body>
+
+  <section class="container">
+    
+    
+    
+    <form action="" name="calculator">
+      
+      
+      
+      <input type="text" id="scr" placeholder="0" name="screen" disabled>
+      <hr>
+      
+      <input type="button" class="offbtn" value="OFF" onclick= "s_off()">
+      <input type="button" class="onbtn" value="ON" onclick= "s_on()"><br>
+
+
+
+      <input type="button" class="clear button" value="AC" onclick = "calculator.screen.value = '' ">
+      <input type="button" class="clear button" value="CE" onclick = "calculator.screen.value = calculator.screen.value.slice(0, -1)"> 
+      <input type="button" class="ope button" value="x!" onclick = "factorial()"> 
+      <input type="button" class="ope button" value="+/-" onclick = "negate()">
+      
+      
+      <input type="button" class="ope button" value="x&#xb2;"  onclick = "calculator.screen.value = Math.pow(calculator.screen.value,2)">
+      <input type="button" class="ope button" value="Mod"  onclick = "calculator.screen.value += '%' ">
+      <input type="button" class="ope button" value="Abs"  onclick="calculator.screen.value = Math.abs(calculator.screen.value)">
+      <input type="button" class="operator button" value="%"  onclick = "percentage()"> 
+      
+      
+      
+      <input type="button" value="7" class="button" onclick="calculator.screen.value += '7' ">
+      <input type="button" value="8" class="button" onclick="calculator.screen.value += '8' ">
+      <input type="button" value="9" class="button" onclick="calculator.screen.value += '9' ">
+      <input type="button" class="operator button" value="&divide;" onclick="calculator.screen.value += '/' "><br> 
+      
+      
+      
+      <input type="button" value="4"  class="button"onclick="calculator.screen.value += '4' "> 
+      <input type="button" value="5"  class="button"onclick="calculator.screen.value += '5' ">
+      <input type="button" value="6"  class="button"onclick="calculator.screen.value += '6' ">
+      <input type="button" class="operator button" value="&times;" onclick="calculator.screen.value += '*' "><br>
+      
+      
+      
+      <input type="button" value="1" class="button" onclick="calculator.screen.value += '1' ">
+      <input type="button" value="2"  class="button"onclick="calculator.screen.value += '2' ">
+      <input type="button" value="3" class="button" onclick="calculator.screen.value += '3' ">
+      <input type="button" class="operator button" value="&ndash;" onclick="calculator.screen.value += '-' "><br>
+      
+      
+      
+      <input type="button" value="." class="button" onclick="calculator.screen.value += '.' ">
+      <input type="button" value="0" class="button" onclick="calculator.screen.value += '0' ">
+      <input type="button" value="00" class="button" onclick="calculator.screen.value += '00' ">
+      <input type="button" class="operator button" value="+" onclick="calculator.screen.value += '+' ">
+      
+      
+      
+      <input type="button" class="ope button" value="("  onclick = "calculator.screen.value += '(' ">
+      <input type="button" class="ope button" value=")"  onclick = "calculator.screen.value += ')' ">
+      <input type="button" class="operator button" value="&radic;" onclick="calculator.screen.value = Math.sqrt(calculator.screen.value)">
+      <!-- <input type="button" class="operator" value="=" onclick= "calculator.screen.value = eval(calculator.screen.value)"> -->
+      <input type="button" class="operator button" value="=" onclick= "equal()"><br>
+      
+      
+      
+      
+     
+  </form>
+    
+  </section>
+    
+  
+  
+ 
+
+<script src="simple-calculator-1.js"></script>
+</body>
+</html>
